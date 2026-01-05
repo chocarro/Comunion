@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mi Primera Comunión | Invitación</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="no-scroll">
+
+    <div id="envelope" class="envelope-full" onclick="openInvitation()">
+        <div class="envelope-overlay">
+            <p class="tap-hint">Toca para abrir la invitación</p>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <section class="hero">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="Portada.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay">
+                <h1 class="nombres">15 . Abril . 2026</h1>
+                <h2 class="fecha-destacada"><b>MARÍA GARCÍA</b></h2>
+                <p style="letter-spacing: 3px; font-weight: 200; color: white;">MI PRIMERA COMUNIÓN</p>
+            </div>
+        </section>
+
+        <section class="reveal section-padding">
+            <h2 class="titulo-elegante">Solo faltan...</h2>
+
+
+            <div class="countdown-container">
+                <div class="countdown-item"><span id="days">00</span>
+                    <p>Días</p>
+                </div>
+                <div class="countdown-item"><span id="hours">00</span>
+                    <p>Hs</p>
+                </div>
+                <div class="countdown-item"><span id="minutes">00</span>
+                    <p>Min</p>
+                </div>
+                <div class="countdown-item"><span id="seconds">00</span>
+                    <p>Seg</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <div class="separator">
+            <div class="line"></div>
+            <div class="diamond"></div>
+            <div class="line"></div>
+        </div>
+
+        <section class="reveal section-padding diet-section-full">
+            <div class="diet-card">
+                <h2 class="titulo-elegante">Ubicación</h2>
+                <p><strong>Parroquia de San Juan</strong></p>
+                <p>Calle Mayor, 12, Badajoz</p>
+                <br>
+                <div class="hora-llegada">
+                    <p>La ceremonia comenzará a las: <strong>12:00 Horas</strong></p>
+                </div>
+                <br>
+                <div class="button-group">
+                    <a href="https://maps.google.com" target="_blank" class="btn-action btn-maps">Cómo llegar</a>
+                    <a href="#" target="_blank" class="btn-action btn-calendar">Agendar evento</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="separator">
+            <div class="line"></div>
+            <div class="diamond"></div>
+            <div class="line"></div>
+        </div>
+
+
+        <section class="reveal section-padding faq-section">
+            <h2 class="titulo-elegante">Dudas Comunes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">¿Hay menú infantil? <span>+</span></button>
+                    <div class="faq-answer">
+                        <p>¡Claro que sí! Habrá un menú especial con todas sus cosas favoritas y muchas chuches.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">¿Dónde aparcar? <span>+</span></button>
+                    <div class="faq-answer">
+                        <p>No os preocupéis por el coche. Tanto la parroquia como la finca cuentan con parking gratuito
+                            y vigilado para todos los invitados.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">¿Cuál es el código de vestimenta?
+                        <span>+</span></button>
+                    <div class="faq-answer">
+                        <p>Lo más importante es que vengáis cómodos para disfrutar. El estilo será <strong>Media
+                                Etiqueta</strong> o <strong>Cóctel</strong>.</p>
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">¿Hay servicio de autobús?
+                        <span>+</span></button>
+                    <div class="faq-answer">
+                        <p>Para que podáis brindar tranquilos, pondremos un autobús de vuelta desde la finca hacia el
+                            centro a las 20:00h y a las 22:00h.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="separator">
+            <div class="line"></div>
+            <div class="diamond"></div>
+            <div class="line"></div>
+        </div>
+
+      <section class="reveal section-padding">
+    <h2 class="titulo-elegante">Itinerario</h2>
+    <div class="timeline-container">
+        
+        <div class="timeline-item">
+            <div class="timeline-icon">🕒</div>
+            <div class="timeline-content">
+                <h3>12:00h - Ceremonia</h3>
+                <p>Nos daremos cita en la Parroquia de San Juan para la misa solemne.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-icon">🥂</div>
+            <div class="timeline-content">
+                <h3>14:00h - Cóctel</h3>
+                <p>Celebraremos la bienvenida con un aperitivo en los jardines de la finca.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-icon">🍽️</div>
+            <div class="timeline-content">
+                <h3>15:00h - Banquete</h3>
+                <p>Disfrutaremos de un almuerzo especial todos juntos.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-icon">🎉</div>
+            <div class="timeline-content">
+                <h3>17:30h - Fiesta y Dulces</h3>
+                <p>Abriremos el Candy Bar y comenzará la animación para los más pequeños.</p>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <a href="https://wa.me/34600000000" class="btn-diet">AVISAR ALERGIAS</a>
+</section>
+
+
+
+
+        <div class="separator">
+            <div class="line"></div>
+            <div class="diamond"></div>
+            <div class="line"></div>
+        </div>
+
+
+        <section class="reveal section-padding rsvp-section seccion-arco">
+            <h2 class="titulo-elegante">Confirmación</h2>
+            <a href="https://wa.me/34600000000" class="btn-action btn-confirmar">CONFIRMAR ASISTENCIA</a>
+            <br>
+            <br>
+            <p>Por favor, confirma antes del 30 de Febrero.</p>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
